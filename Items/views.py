@@ -39,7 +39,7 @@ def loginPage(request):
             login(request, user)
             return redirect('post')
         else:
-            messages.info(request, 'username of password is INCORRECT')
+            messages.info(request, 'username or password is INCORRECT')
     return render(request, 'Items/login.html')
 
 def postPage(request):

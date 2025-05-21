@@ -12,6 +12,7 @@ class ProfileAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name','description','price','image','date')
     list_filter = ('name', 'price','date')
-
+    
+    
 admin.site.register(profile,ProfileAdmin)
 admin.site.register(Product,ProductAdmin)

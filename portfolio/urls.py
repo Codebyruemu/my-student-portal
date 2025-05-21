@@ -27,8 +27,8 @@ admin.site.index_title = 'STORE ADMIN'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('myportfolioapp.urls')),
-    path('',include('Items.urls')),
-    path('', include('registration.urls'))   
+    path('items',include('Items.urls')),
+    path('registration', include('registration.urls'))   
 ] 
 
 # ✅ Add BOTH static and media when DEBUG=True
